@@ -57,7 +57,7 @@ class ShortcodeChain
      *
      * @return string The shortcode search regular expression
      */
-    private function getShortcodeRegex()
+    public function getShortcodeRegex()
     {
         $tagnames = array_keys($this->shortcodes);
         $tagregexp = join('|', array_map('preg_quote', $tagnames));
